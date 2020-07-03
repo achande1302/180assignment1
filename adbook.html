@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav>
+		<div class="menubar">
+		 <ul>
+		  <li><a href="main.html">Home</a></li>
+		  <div class="dropdown">
+		  	<li><a href="genre.html">Genre</a></li>
+			  <div class="dropdown-content">
+			  	<ul>
+			  		<li><a href="#">Sci-Fi</a></li> 
+			  		<li><a href="#">Fiction</a></li>	
+			    	<li><a href="#">Fantasy</a></li>
+			  	</ul>
+			    
+			  </div>
+		  </div>
+		  <li class="active"><a href="addbook.html">Add Book</a></li>
+		  <li><a href="signup.html">Sign Up</a></li>
+		</ul> 
+		</div>
+	</nav>
+	<div class="frm">
+		<form>
+			<div class="addbook">
+				<h1>Add Book</h1>
+				<input class="txt" type="Text" placeholder="Enter Book Name">
+				<input class="txt" type="Text" Placeholder="Enter Author">
+			</div>
+			<div class="chc">
+				<h3>Select Genre</h3>
+
+				<label class="radio"><input type="radio" id="scifi" name="genre">
+			  	Sci-Fi<span></span></label>
+
+			  	<label class="radio"><input type="radio" id="fic" name="genre">
+			 		Fiction <span></span></label>
+
+				<label class="radio"><input type="radio" id="fan" name="genre">
+			  	Fantasy<span></span></label><br>
+			  	
+			  	<h3>Upload Image</h3>
+
+
+			  	 <input class="file" type="file" id="myfile" name="myfile">
+			</div>
+			<button class="btn" onclick="alert('Book Added!')">
+			Add Book</button>
+		</form>
+	</div>
+</body>
+</html>
